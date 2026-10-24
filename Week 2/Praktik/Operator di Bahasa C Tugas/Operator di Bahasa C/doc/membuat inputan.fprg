@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="membuat inputan"/>
+        <attribute name="authors" value="Acer NIitro 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-16 11:29:10 AM"/>
+        <attribute name="created" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0wOS0xNjsxMDowMzo1MiBBTTsyNzg5"/>
+        <attribute name="edited" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0wOS0xNjsxMToyOToxMCBBTTsxOzI5MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <declare name="floathasil" type="Integer" array="False" size=""/>
+            <declare name="sisa" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="144"/>
+            <assign variable="y" expression="20"/>
+            <output expression="x / y" newline="True"/>
+            <output expression="x % y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

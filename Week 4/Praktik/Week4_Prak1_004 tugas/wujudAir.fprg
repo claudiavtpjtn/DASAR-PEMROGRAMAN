@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="wujudAir"/>
+        <attribute name="authors" value="Acer NIitro 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-02 09:04:02 AM"/>
+        <attribute name="created" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0xMC0wMjswODo1Mzo0NyBBTTsyNzky"/>
+        <attribute name="edited" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0xMC0wMjswOTowNDowMiBBTTsxOzI4ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai suhu air&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; 0">
+                <then>
+                    <output expression="&quot;Wujud air adalah Padat&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &gt;= 0 AND x &lt; 100">
+                        <then>
+                            <output expression="&quot;Wujud air adalah Cair&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Wujut air adalah Gas&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

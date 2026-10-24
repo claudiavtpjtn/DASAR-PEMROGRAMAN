@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="GanjilGenap"/>
+        <attribute name="authors" value="HPEnvy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-29 08:08:33 PM"/>
+        <attribute name="created" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjA1OjEwIFBNOzI4ODQ="/>
+        <attribute name="edited" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjA4OjMzIFBNOzE7MzAwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan sebuah bilangan bulat:&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x % 2 == 0">
+                <then>
+                    <output expression="x &amp; &quot; bilangan genap &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="x &amp; &quot; bilangan ganjil &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

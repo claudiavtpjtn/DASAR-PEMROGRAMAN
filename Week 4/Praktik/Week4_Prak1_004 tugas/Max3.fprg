@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Max3"/>
+        <attribute name="authors" value="HPEnvy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 04:26:47 PM"/>
+        <attribute name="created" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjMwOjM4IFBNOzI4OTI="/>
+        <attribute name="edited" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjM2OjM1IFBNOzE7MzAwMw=="/>
+        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC0xRVJHVDc3VDsyMDI2LTEwLTAxOzA0OjI2OjQ3IFBNOzE7MzA3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <declare name="max" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan bilangan pertama:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Masukkan bilangan kedua:&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="x &gt; y">
+                <then>
+                    <assign variable="max" expression="x"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="y"/>
+                </else>
+            </if>
+            <output expression="&quot;Bilangan terbesar = &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

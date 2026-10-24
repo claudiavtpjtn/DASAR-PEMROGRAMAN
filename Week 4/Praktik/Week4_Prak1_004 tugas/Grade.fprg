@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Grade"/>
+        <attribute name="authors" value="HPEnvy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-29 08:21:55 PM"/>
+        <attribute name="created" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjA4OjM3IFBNOzI4OTY="/>
+        <attribute name="edited" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjIxOjU1IFBNOzE7Mjk5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="ch" type="String" array="False" size=""/>
+            <output expression="&quot;Masukan nilai kuliah anda: &quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &gt; 80">
+                <then>
+                    <assign variable="ch" expression="&quot;A&quot;"/>
+                </then>
+                <else>
+                    <if expression="x &gt;= 65">
+                        <then>
+                            <assign variable="ch" expression="&quot;B&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="x &gt;=50">
+                                <then>
+                                    <assign variable="ch" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="x &gt;= 35">
+                                        <then>
+                                            <assign variable="ch" expression="&quot;D&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="ch" expression="&quot;E&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Anda mendapatkan grade &quot; &amp; ch" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="MasaTunggak"/>
+        <attribute name="authors" value="HPEnvy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-29 08:47:46 PM"/>
+        <attribute name="created" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjQwOjEyIFBNOzI4ODU="/>
+        <attribute name="edited" value="SFBFbnZ5O0RFU0tUT1AtSkQ0UjNDMTsyMDI2LTA5LTI5OzA4OjQ3OjQ2IFBNOzE7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PokokUtang" type="Real" array="False" size=""/>
+            <declare name="MasaTunggak" type="Integer" array="False" size=""/>
+            <declare name="PeringkatKredit" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan pokok utang:&quot;" newline="True"/>
+            <input variable="PokokUtang"/>
+            <output expression="&quot;Masukkan masa tunggak:&quot;" newline="True"/>
+            <input variable="MasaTunggak"/>
+            <if expression="PokokUtang &lt;=100">
+                <then>
+                    <if expression="MasaTunggak &lt;= 6">
+                        <then>
+                            <assign variable="PeringkatKredit" expression="1"/>
+                        </then>
+                        <else>
+                            <assign variable="PeringkatKredit" expression="0"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="MasaTunggak &lt;= 12">
+                        <then>
+                            <assign variable="PeringkatKredit" expression="1"/>
+                        </then>
+                        <else>
+                            <assign variable="PeringkatKredit" expression="0"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="PeringkatKredit == 1">
+                <then>
+                    <output expression="&quot;Peringkat utang anda Jadwalkan&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Peringkat utang anda Gagal&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

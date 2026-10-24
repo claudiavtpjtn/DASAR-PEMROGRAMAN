@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow_tugas1"/>
+        <attribute name="authors" value="Acer NIitro 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-18 02:10:43 PM"/>
+        <attribute name="created" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0xMC0xODswMTo1Njo0OCBQTTsyODEx"/>
+        <attribute name="edited" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0xMC0xODswMjoxMDo0MyBQTTsxOzI5MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <output expression="&quot;Segitiga terbalik: &quot;" newline="True"/>
+            <for variable="i" start="5" end="n" direction="dec" step="1">
+                <for variable="j" start="1" end="i" direction="inc" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

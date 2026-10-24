@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="deret aritmatika"/>
+        <attribute name="authors" value="Acer NIitro 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-17 08:03:59 AM"/>
+        <attribute name="created" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0wOS0xNzswNzo0NDowNiBBTTsyODAw"/>
+        <attribute name="edited" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0wOS0xNzswODowMzo1OSBBTTsxOzI5MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="U1, U2, U3, U4" type="Integer" array="False" size=""/>
+            <declare name="a, b, n, Un" type="Integer" array="False" size=""/>
+            <assign variable="U1" expression="2"/>
+            <assign variable="U2" expression="5"/>
+            <assign variable="U3" expression="8"/>
+            <assign variable="U4" expression="11"/>
+            <assign variable="a" expression="U1"/>
+            <assign variable="b" expression="U2 - U1"/>
+            <assign variable="n" expression="20"/>
+            <output expression="a + (n - 1) * b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

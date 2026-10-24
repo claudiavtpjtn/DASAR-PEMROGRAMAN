@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow_tugas2"/>
+        <attribute name="authors" value="Acer NIitro 5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-18 03:11:38 PM"/>
+        <attribute name="created" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0xMC0xODswMjo0OTowNiBQTTsyODA4"/>
+        <attribute name="edited" value="QWNlciBOSWl0cm8gNTtDTEFVREU7MjAyNi0xMC0xODswMzoxMTozOCBQTTsxOzI5MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, prima" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bilangan prima 2 sampai 50: &quot;" newline="True"/>
+            <for variable="i" start="2" end="50" direction="inc" step="1">
+                <assign variable="prima" expression="1"/>
+                <assign variable="j" expression="2"/>
+                <while expression="j * j &lt;= i &amp;&amp; prima == 1">
+                    <if expression="i % j == 0">
+                        <then>
+                            <assign variable="prima" expression="0"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="j" expression="j + 1"/>
+                </while>
+                <if expression="prima == 1">
+                    <then>
+                        <output expression="i &amp; &quot; &quot;" newline="False"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
